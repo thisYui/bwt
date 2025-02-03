@@ -6,7 +6,7 @@
 int main(int argc, char** argv)
 {
 	// Check if the user has entered the correct number of arguments
-	if (argc < 4 && argc > 5)
+	if (argc < 4 || argc > 5)
 	{
 		std::cout << "Invalid number of arguments. Please enter the correct number of arguments." << std::endl;
 		return 1;
