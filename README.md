@@ -29,30 +29,23 @@ Dồ án này thuộc vào học phần Cấu trúc dữu liệu và Giải thu�
 - Di chuyển đến thư mục chứa folder bằng lệnh 'cd'. Ví dụ : cd "D:\bwt" nếu như thư mục chứa file .cpp là D:\bwt, sau đó sử dụng lệnh g++ để biên dịch file .cpp thành file .exe
 
  g++ -o main.exe *.cpp
- 
 - Sau khi biên dịch thành công sẽ xuất hiện file main.exe nằm trong thư mục bwt/.
 - Vì chứa các file trên bằng folder nên phải chú ý việc ghi đường dẫn khi dùng command line
 - File input.txt trong thư mục command thì phải ghi đường dẫn là command\input.txt
 
 ### Bước 3: Sử dụng  main.exe
 Chuyển đổi chuỗi thành chuỗi đã mã hóa bằng bwt
-
  .\main.exe -c command\input.txt output.txt --bwt
-
 - input.txt : file chứa chuỗi cần mã hóa 
 - output.txt : file chứa chuỗi đã mã hóa 
-- 
+
 Chuyển đổi chuỗi dạng bwt thành chuỗi gốc
-
  .\main.exe -c output.txt restore.txt
-
 - output.txt : file chứa chuỗi đã mã hóa sử dụng lại từ bước trên
 - restore.txt : file chứa chuỗi gốc được phục hồi có thể so sánh với file input.txt
 
 Tìm kiếm chuỗi pattern trong paragraph
-
 .\main.exe -p command\paragraph.txt command\patterns.txt index.txt
-
 - paragraph.txt : file chứa đoạn văn
 - patterns.txt : file chứa các chuỗi cần tìm kiếm
 - index.txt : file chứa vị trí xuất hiện của các chuỗi cần tìm kiếm trong đoạn văn
@@ -61,14 +54,12 @@ Nén file
 
 .\main.exe -z command\log.txt zlog.txt
 hoặc .\main.exe -z command\log.txt zlog.bin
-
 - log.txt : file chứa dữ liệu cần nén
 - zlog.txt hoặc zlog.bin: file chứa dữ liệu đã nén
 
-giải nén file
+Giải nén file
 
 .\main.exe -z zlog.txt relog.txt --u
 nếu nén thành bin: .\main.exe -z zlog.bin relog.txt --u
-
 - zlog.txt hoặc zlog.bin : file chứa dữ liệu đã nén
 - relog.txt : file chứa dữ liệu đã giải nén
