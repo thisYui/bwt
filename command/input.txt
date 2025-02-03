@@ -1,0 +1,4 @@
+hello$
+world$
+panabanana$
+this is a test string$
